@@ -346,15 +346,15 @@
            with tqdm(total=len(visul_set), desc='  Visul') as pbar:
                visul(pbar, epoch)
            log(epoch)
-  ```
-  ```py
-  display.Image(str(log_dir / 'metrics.jpg'))
-  ```
-  ```py
-  display.Image(str(log_dir / '009' / '000.jpg'))
-  ```
-  ```py
-  display.Image(str(log_dir / '009' / '032.jpg'))
-  ```
+   ```
+   ```py
+   display.Image(str(log_dir / 'metrics.jpg'))
+   ```
+   ```py
+   display.Image(str(log_dir / '009' / '000.jpg'))
+   ```
+   ```py
+   display.Image(str(log_dir / '009' / '032.jpg'))
+   ```
 # My full code
 https://colab.research.google.com/drive/1fCnklmPyVwze7AiWmh5JHQoTBRBE24zO#scrollTo=XkdFwquqGTvI
