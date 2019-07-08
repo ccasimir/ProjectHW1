@@ -234,7 +234,7 @@
    device = 'cuda'
    model = CCPDRegressor().to(device)
    criterion = nn.L1Loss().to(device)
-   optimizer = torch.optim.SGD(model.parameters(), lr=1e-3)
+   optimizer = torch.optim.SGD(model.parameters(), lr=0.05)
    
    log_dir = Path('./log/') / f'{datetime.now():%Y.%m.%d-%H:%M:%S}'
    log_dir.mkdir(parents=True)
@@ -357,4 +357,4 @@
    display.Image(str(log_dir / '009' / '032.jpg'))
    ```
 # My full code
-https://colab.research.google.com/drive/1fCnklmPyVwze7AiWmh5JHQoTBRBE24zO#scrollTo=XkdFwquqGTvI
+https://colab.research.google.com/drive/1_I698504kjOPTwuVTwMqMYEMRhjJnRQX#scrollTo=Id4_SmMo9EuZ
